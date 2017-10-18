@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extension type="component" version="2.5.0" method="upgrade">
+    <name>COM_JSHOPMENU</name>
+        <author>Artem Kernel</author>
+        <creationDate>September 2015</creationDate>
+        <copyright>Copyright (C) 2015 AKERNEL.RU. All rights reserved.</copyright>
+        <license>GNU/GPLv3 https://github.com/akernel/com_jshopmenu/blob/master/LICENSE</license>
+        <authorEmail>info@akernel.ru</authorEmail>
+        <authorUrl>https://www.akernel.ru</authorUrl>
+        <version>1.0</version>
+        <variant>PRO</variant>
+    <description>COM_JSHOPMENU_XML_DESCRIPTION</description>
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+    <update>
+        <schemas>
+            <schemapath type="mysql">sql/updates/mysql</schemapath>
+        </schemas>
+    </update>
+ 	<files folder="site">
+        <filename>controller.php</filename>
+        <filename>index.html</filename>
+        <filename>jshopmenu.php</filename>
+        <folder>controllers</folder> 
+        <folder>helpers</folder>
+        <folder>models</folder>
+        <folder>views</folder>
+    </files>
+    
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.com_jshopmenu.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.com_jshopmenu.sys.ini</language>
+        <language tag="ru-RU">language/ru-RU/ru-RU.com_jshopmenu.ini</language>
+        <language tag="ru-RU">language/ru-RU/ru-RU.com_jshopmenu.sys.ini</language>
+    </languages>
+ 
+    <media destination="com_jshopmenu" folder="media">
+        <filename>index.html</filename>
+        <folder>images</folder>
+        <folder>css</folder>
+        <folder>js</folder>
+    </media>
+    <administration>
+        <!-- Раздел Меню -->
+        <menu img="../media/com_jshopmenu/images/jshopmenu-16x16.png">COM_JSHOPMENU_MENU</menu>
+        <files folder="admin">
+            <filename>index.html</filename>
+            <filename>jshopmenu.php</filename>
+            <filename>controller.php</filename>
+            <filename>config.xml</filename>
+            <folder>views</folder>
+            <folder>models</folder>
+            <folder>tables</folder>
+            <folder>controllers</folder>
+            <folder>helpers</folder>
+            <folder>phpexcel</folder>
+            <folder>sql</folder>
+        </files>
+        <languages folder="admin">
+            <language tag="en-GB">language/en-GB/en-GB.com_jshopmenu.ini</language>
+            <language tag="en-GB">language/en-GB/en-GB.com_jshopmenu.sys.ini</language>
+            <language tag="ru-RU">language/ru-RU/ru-RU.com_jshopmenu.ini</language>
+            <language tag="ru-RU">language/ru-RU/ru-RU.com_jshopmenu.sys.ini</language>
+        </languages>
+    </administration>
+ 
+</extension>
