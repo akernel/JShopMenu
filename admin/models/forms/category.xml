@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <form>
+     <fieldset name="details">
+		<field name="category_id"  type="text" class="readonly" label="JGLOBAL_FIELD_ID_LABEL"
+			description ="JGLOBAL_FIELD_ID_DESC" size="10" default="0"
+			readonly="true" />
+         <field
+             name="name"
+             type="text"
+             label="COM_JSHOPMENU_CATEGORY_FIELD_NAME_LABEL"
+             description="COM_JSHOPMENU_CATEGORY_FIELD_NAME_DESC"
+             class="inputbox validate-name"
+             size="40"
+             maxlength="255"
+             required="true"
+             default=""
+         />
+         <field
+             name="slug"
+             type="url"
+             label="COM_JSHOPMENU_CATEGORY_FIELD_ALIES_LABEL"
+             description="COM_JSHOPMENU_CATEGORY_FIELD_ALIES_DESC"
+             class="inputbox validate-slug"
+             size="40"
+             maxlength="255"
+             required="true"
+             default=""
+         />
+         <field
+             name="short_name"
+             type="text"
+             label="COM_JSHOPMENU_CATEGORY_FIELD_SHORT_NAME_LABEL"
+             description="COM_JSHOPMENU_CATEGORY_FIELD_SHORT_NAME_DESC"
+             class="validate-short_name"
+             size="40"
+             maxlength="255"
+             default=""
+         />
+         <field
+             name="short_description"
+             type="textarea"
+             label="COM_JSHOPMENU_CATEGORY_FIELD_SHORT_DESCRIPTION_LABEL"
+             description="COM_JSHOPMENU_CATEGORY_FIELD_SHORT_DESCRIPTION_DESC"
+             class="validate-short_description"
+             cols="100"
+             rows="2"
+             default=""
+             maxlength="255"
+         />
+         <field
+             name="description"
+             type="editor"
+             label="COM_JSHOPMENU_CATEGORY_FIELD_DESCRIPTION_LABEL"
+             description="COM_JSHOPMENU_CATEGORY_FIELD_DESCRIPTION_DESC"
+             filter="JComponentHelper::filterText"
+             buttons="true"
+         />
+         <field
+             name="published"
+             type="list"
+             label="JSTATUS"
+             description="JFIELD_PUBLISHED_DESC"
+             class="chzn-color-state validate-published"
+             default="1"
+             size="1"
+         >
+        	<option value="1">
+        		JPUBLISHED</option>
+        	<option value="0">
+        		JUNPUBLISHED</option>
+         </field>
+         <field
+             name="ordering"
+             type="number"
+             label="COM_JSHOPMENU_CATEGORY_FIELD_SORT_LABEL"
+             description="COM_JSHOPMENU_CATEGORY_FIELD_SORT_DESC"
+             size="30"
+             default="0"
+         />
+         <field
+             name="koll_person"
+             type="number"
+             label="COM_JSHOPMENU_CATEGORY_FIELD_KOLL_PERSON_LABEL"
+             description="COM_JSHOPMENU_CATEGORY_FIELD_KOLL_PERSON_DESC"
+             class="inputbox validate-koll_person"
+             size="30"
+             default="1"
+         />
+     </fieldset>
+     <fieldset name="images">
+         <field
+             name="image"
+             type="file"
+             label="COM_JSHOPMENU_CATEGORY_FIELD_IMAGE_LABEL"
+             description="COM_JSHOPMENU_CATEGORY_FIELD_IMAGE_DESC"
+             class="inputbox validate-image"
+             size="40"
+         />
+     </fieldset>
+     <fieldset name="files">
+         <field
+             name="file"
+             type="text"
+             label="COM_JSHOPMENU_CATEGORY_FIELD_FILE_LABEL"
+             description="COM_JSHOPMENU_CATEGORY_FIELD_FILE_DESC"
+             class="inputbox"
+             size="40"
+             default=""
+         />
+     </fieldset>
+     
+    <fieldset name="metadata"
+        label="Мета данные">
+        <field name="metatitle" type="textarea"
+			label="Мета Title" description="JFIELD_META_KEYWORDS_DESC"
+			rows="3" cols="30" />
+            
+		<field name="metakey" type="textarea"
+			label="JFIELD_META_KEYWORDS_LABEL" description="JFIELD_META_KEYWORDS_DESC"
+			rows="3" cols="30" />
+
+		<field name="metadesc" type="textarea"
+			label="JFIELD_META_DESCRIPTION_LABEL" description="JFIELD_META_DESCRIPTION_DESC"
+			rows="3" cols="30" />
+    </fieldset>
+    
+    <fields name="params">
+        <fieldset
+            name="params"
+            label="JGLOBAL_FIELDSET_DISPLAY_OPTIONS"
+            addfieldpath="/administrator/components/com_jshopmenu/models/fields"
+        >
+            <field
+                name="show_category_short_description"
+                type="list"
+			     class="chzn-color"
+                label="COM_JSHOPMENU_SHOW_CATEGORY_SHORT_DESCRIPTION_LABEL"
+                description="COM_JSHOPMENU_SHOW_CATEGORY_SHORT_DESCRIPTION_DESC"
+                default=""
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+            <field
+                name="show_category_description"
+        		type="list"
+        		class="chzn-color"
+                label="COM_JSHOPMENU_SHOW_CATEGORY_DESCRIPTION_LABEL"
+                description="COM_JSHOPMENU_SHOW_CATEGORY_DESCRIPTION_DESC"
+                default=""
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+            <field
+                name="show_category_image"
+    			type="list"
+    			class="chzn-color"
+                label="COM_JSHOPMENU_SHOW_CATEGORY_IMAGE_LABEL"
+                description="COM_JSHOPMENU_SHOW_CATEGORY_IMAGE_DESC"
+                default=""
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+            
+            <field
+                name="category_color_block"
+                type="metrocolors"
+                label="Цвет блока"
+                description=""
+                default=""
+            />
+            <field
+                name="category_color_text"
+                type="metrocolors"
+                label="Цвет текста"
+                description=""
+                default=""
+            />
+            <field
+                name="category_type_efeckt"
+                type="list"
+                label="Эфект картинки"
+                description="COM_JSHOPMENU_SHOW_CATEGORY_IMAGE_DESC"
+                default=""
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="fade">Fade</option>
+                <option value="slide-down">Slide Top</option>
+                <option value="slide-up">Slide Bot</option>
+                <option value="slide-left">Slide Left</option>
+                <option value="slide-right">Slide Right</option>
+                <option value="zooming">Zooming In</option>
+                <option value="zooming-out">Zooming Out</option>
+            </field>
+            <field
+                name="category_color_sub_block"
+                type="metrocolors"
+                label="Цвет блока текста"
+                description=""
+                default=""
+            />
+        
+        
+    		<field
+    			name="spacer21"
+    			type="spacer"
+    			hr="true"
+    			/>
+            
+            <field
+                name="category_number_menu_type"
+    			type="jsmmenutypes"
+                label="Открывать тип меню(ID)"
+                description=""
+                default=""
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+            </field>
+            
+            
+            <field
+                name="category_load_menu_type"
+    			type="list"
+                label="Загрузка типов меню"
+                description=""
+                default=""
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">Обычный</option>
+                <option value="1">Ajax</option>
+            </field>
+            
+            
+            <field
+                name="category_koef_obslujivanie"
+    			type="text"
+                label="Коефицент обслуживания"
+                description=""
+                default=""
+            />
+            
+            <field
+                name="category_min_koll_person"
+        		type="number"
+                label="Минемальное количество персон"
+                description=""
+                default=""
+            />
+            <field
+                name="category_max_koll_person"
+        		type="number"
+                label="Максимальное количество персон"
+                description=""
+                default=""
+            />
+        </fieldset>
+    </fields>
+ </form>

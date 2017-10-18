@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <form>
+     <fieldset name="details">
+		<field name="product_id"  type="text" class="readonly" label="JGLOBAL_FIELD_ID_LABEL"
+			description ="JGLOBAL_FIELD_ID_DESC" size="10" default="0"
+			readonly="true" />
+            
+         <field
+             name="name"
+             type="text"
+             label="COM_JSHOPMENU_PRODUCT_FIELD_NAME_LABEL"
+             description="COM_JSHOPMENU_PRODUCT_FIELD_NAME_DESC"
+             size="40"
+             class="inputbox validate-name"
+             required="true"
+             maxlength="255"
+             default=""
+         />
+         <field
+             name="short_description"
+             type="textarea"
+             label="COM_JSHOPMENU_PRODUCT_FIELD_SHORT_DESCRIPTION_LABEL"
+             description="COM_JSHOPMENU_PRODUCT_FIELD_SHORT_DESCRIPTION_DESC"
+             class="inputbox validate-short_description"
+             default=""
+             cols="100"
+             rows="2"
+         />
+         <field
+             name="published"
+             type="list"
+             label="JSTATUS"
+             description="JFIELD_PUBLISHED_DESC"
+             class="chzn-color-state validate-published"
+             default="1"
+             size="1"
+         >
+        	<option value="1">
+        		JPUBLISHED</option>
+        	<option value="0">
+        		JUNPUBLISHED</option>
+         </field>
+         <field
+             name="ordering"
+             type="number"
+             label="COM_JSHOPMENU_PRODUCT_FIELD_SORT_LABEL"
+             description="COM_JSHOPMENU_PRODUCT_FIELD_SORT_DESC"
+             size="30"
+             class="inputbox validate-sort"
+             default="0"
+         />
+         <field
+             name="price"
+             type="text"
+             label="COM_JSHOPMENU_PRODUCT_FIELD_PRICE_LABEL"
+             description="COM_JSHOPMENU_PRODUCT_FIELD_PRICE_DESC"
+             size="40"
+             class="inputbox validate-price"
+             default="0.00"
+         />
+         <field
+             name="ves"
+             type="text"
+             label="COM_JSHOPMENU_PRODUCT_FIELD_VES_LABEL"
+             description="COM_JSHOPMENU_PRODUCT_FIELD_VES_DESC"
+             size="40"
+             class="inputbox validate-ves"
+             default="0.00"
+         />
+         <field
+             name="koll"
+             type="text"
+             label="COM_JSHOPMENU_PRODUCT_FIELD_KOLL_LABEL"
+             description="COM_JSHOPMENU_PRODUCT_FIELD_KOLL_DESC"
+             size="40"
+             class="inputbox validate-koll"
+             default="0"
+         />
+     </fieldset>
+     
+     <fieldset name="images">
+         <field
+             name="image"
+             type="file"
+             label="COM_JSHOPMENU_PRODUCT_FIELD_IMAGE_LABEL"
+             description="COM_JSHOPMENU_PRODUCT_FIELD_IMAGE_DESC"
+             size="40"
+             class="inputbox validate-image"
+             default=""
+         />
+     </fieldset>
+     
+     <fieldset name="info">
+         <field
+             name="category_ids"
+             type="list"
+             default="0"
+         >
+            <option value="0">0</option>
+         </field>
+         <field
+             name="menu_type_ids"
+             type="list"
+             default="0"
+         >
+            <option value="0">0</option>
+         </field>
+         <field
+             name="product_type_ids"
+             type="list"
+             default="0"
+         >
+            <option value="0">0</option>
+         </field>
+         <field
+             name="product_info"
+             type="list"
+             default="0"
+         >
+            <option value="0">0</option>
+         </field>
+     </fieldset>
+    <fields name="params">
+        <fieldset
+            name="params"
+            label="JGLOBAL_FIELDSET_DISPLAY_OPTIONS"
+        >
+        </fieldset>
+    </fields>
+ </form>

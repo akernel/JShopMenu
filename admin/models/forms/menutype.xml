@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <form>
+     <fieldset name="details">
+         <field
+             name="name"
+             type="text"
+             label="COM_JSHOPMENU_MENUTYPE_FIELD_NAME_LABEL"
+             description="COM_JSHOPMENU_MENUTYPE_FIELD_NAME_DESC"
+             size="40"
+             class="inputbox validate-name"
+             required="true"
+             maxlength="255"
+             default=""
+         />
+         <field
+             name="description"
+             type="textarea"
+             label="COM_JSHOPMENU_MENUTYPE_FIELD_DESCRIPTION_LABEL"
+             description="COM_JSHOPMENU_MENUTYPE_FIELD_DESCRIPTION_DESC"
+             class="inputbox validate-description"
+             default=""
+             cols="120"
+             rows="5"
+         />
+         <field
+             name="published"
+             type="list"
+             label="JSTATUS"
+             description="JFIELD_PUBLISHED_DESC"
+             class="chzn-color-state validate-published"
+             default="1"
+             size="1"
+         >
+        	<option value="1">
+        		JPUBLISHED</option>
+        	<option value="0">
+        		JUNPUBLISHED</option>
+         </field>
+         
+         <field
+             name="create_your"
+             type="list"
+             label="COM_JSHOPMENU_MENUTYPE_FIELD_CREATE_YOUR_LABEL"
+             description="COM_JSHOPMENU_MENUTYPE_FIELD_CREATE_YOUR_DESC"
+             size="1"
+             class="chzn-color-state validate-published"
+             default="0"
+         >
+        	<option value="1">
+        		JYES</option>
+        	<option value="0">
+        		JNO</option>
+         </field>
+         <field
+             name="menu_type_id"
+             type="hidden"
+         />
+     </fieldset>
+    <fields name="params">
+        <fieldset
+            name="params"
+            label="JGLOBAL_FIELDSET_DISPLAY_OPTIONS"
+        >
+            <field
+                name="show_category_short_name"
+    			type="list"
+    			class="chzn-color"
+                label="COM_JSHOPMENU_SHOW_CATEGORY_SHORT_NAME_LABEL"
+                description="COM_JSHOPMENU_SHOW_CATEGORY_SHORT_NAME_DESC"
+                default=""
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+        
+		<field
+			name="spacer2"
+			type="spacer"
+			hr="true"
+			/>
+            
+            <field
+                name="show_category_koll_person"
+    			type="list"
+    			class="chzn-color"
+                label="COM_JSHOPMENU_SHOW_CATEGORY_KOLL_PERSON_LABEL"
+                description="COM_JSHOPMENU_SHOW_CATEGORY_KOLL_PERSON_DESC"
+                default=""
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+            <field
+                name="category_koll_person_edit"
+    			type="radio"
+    			class="btn-group btn-group-yesno"
+                label="COM_JSHOPMENU_CATEGORY_KOLL_PERSON_EDIT_LABEL"
+                description="COM_JSHOPMENU_CATEGORY_KOLL_PERSON_EDIT_DESC"
+                default=""
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+        
+		<field
+			name="spacer3"
+			type="spacer"
+			hr="true"
+			/>
+            
+            <field
+                name="show_category_product_type"
+                type="list"
+                label="COM_JSHOPMENU_SHOW_CATEGORY_PRODUCT_TYPE_LABEL"
+                description="COM_JSHOPMENU_SHOW_CATEGORY_PRODUCT_TYPE_DESC"
+                default=""
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">COM_JSHOPMENU_PARAM_VER</option>
+                <option value="1">COM_JSHOPMENU_PARAM_GOR</option>
+            </field>
+        
+		<field
+			name="spacer4"
+			type="spacer"
+			hr="true"
+			/>
+            
+            <field
+                name="show_menu_type_image"
+    			type="list"
+    			class="chzn-color"
+                label="COM_JSHOPMENU_SHOW_MENU_TYPES_IMAGE_LABEL"
+                description="COM_JSHOPMENU_SHOW_MENU_TYPES_IMAGE_DESC"
+                default=""
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+            <field
+                name="show_menu_type_name"
+    			type="list"
+    			class="chzn-color"
+                label="COM_JSHOPMENU_SHOW_MENU_TYPES_NAME_LABEL"
+                description="COM_JSHOPMENU_SHOW_MENU_TYPES_NAME_DESC"
+                default=""
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+            <field
+                name="show_menu_type_short_description"
+    			type="list"
+    			class="chzn-color"
+                label="COM_JSHOPMENU_SHOW_MENU_TYPES_SHORT_DESCRIPTION_LABEL"
+                description="COM_JSHOPMENU_SHOW_MENU_TYPES_SHORT_DESCRIPTION_DESC"
+                default=""
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+            <field
+                name="show_menu_type_ves"
+    			type="list"
+    			class="chzn-color"
+                label="COM_JSHOPMENU_SHOW_MENU_TYPES_VES_LABEL"
+                description="COM_JSHOPMENU_SHOW_MENU_TYPES_VES_DESC"
+                default=""
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+            <field
+                name="show_menu_type_price"
+    			type="list"
+    			class="chzn-color"
+                label="COM_JSHOPMENU_SHOW_MENU_TYPES_PRICE_LABEL"
+                description="COM_JSHOPMENU_SHOW_MENU_TYPES_PRICE_DESC"
+                default=""
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+            <field
+                name="show_menu_type_koll"
+    			type="list"
+    			class="chzn-color"
+                label="COM_JSHOPMENU_SHOW_MENU_TYPES_KOLL_LABEL"
+                description="COM_JSHOPMENU_SHOW_MENU_TYPES_KOLL_DESC"
+                default=""
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+            <field
+                name="menu_type_koll_edit"
+    			type="radio"
+    			class="btn-group btn-group-yesno"
+                label="COM_JSHOPMENU_MENU_TYPES_KOLL_EDIT_LABEL"
+                description="COM_JSHOPMENU_MENU_TYPES_KOLL_EDIT_DESC"
+                default=""
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            <field
+                name="show_menu_type_prices"
+    			type="list"
+    			class="chzn-color"
+                label="COM_JSHOPMENU_SHOW_MENU_TYPES_PRICES_LABEL"
+                description="COM_JSHOPMENU_SHOW_MENU_TYPES_PRICES_DESC"
+                default=""
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+            <field
+                name="show_menu_type_one_ves"
+    			type="list"
+    			class="chzn-color"
+                label="COM_JSHOPMENU_SHOW_MENU_TYPES_ONE_VES_LABEL"
+                description="COM_JSHOPMENU_SHOW_MENU_TYPES_ONE_VES_DESC"
+                default=""
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+        
+		<field
+			name="spacer5"
+			type="spacer"
+			hr="true"
+			/>
+            
+            
+            <field
+                name="show_menu_type_image_min"
+    			type="list"
+    			class="chzn-color"
+                label="Компакт Изоброжение на мобиле"
+                description="Компакт Изоброжение на мобиле"
+                default=""
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+        
+		<field
+			name="spacer6"
+			type="spacer"
+			hr="true"
+			/>
+            
+            <field
+                name="show_menu_type_one_veses"
+    			type="list"
+    			class="chzn-color"
+                label="COM_JSHOPMENU_SHOW_MENU_TYPES_ONE_VESES_LABEL"
+                description="COM_JSHOPMENU_SHOW_MENU_TYPES_ONE_VESES_DESC"
+                default=""
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+            <field
+                name="show_menu_type_one_veses_voda"
+    			type="list"
+    			class="chzn-color"
+                label="COM_JSHOPMENU_SHOW_MENU_TYPES_ONE_VESES_VODA_LABEL"
+                description="COM_JSHOPMENU_SHOW_MENU_TYPES_ONE_VESES_VODA_DESC"
+                default=""
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+            <field
+                name="show_menu_type_one_price"
+    			type="list"
+    			class="chzn-color"
+                label="COM_JSHOPMENU_SHOW_MENU_TYPES_PRICES_L_LABEL"
+                description="COM_JSHOPMENU_SHOW_MENU_TYPES_PRICES_L_DESC"
+                default=""
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+            <field
+                name="show_menu_type_obslugivanie"
+    			type="list"
+    			class="chzn-color"
+                label="COM_JSHOPMENU_SHOW_MENU_TYPES_OBSLUGIVANIE_LABEL"
+                description="COM_JSHOPMENU_SHOW_MENU_TYPES_OBSLUGIVANIE_DESC"
+                default=""
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+            <field
+                name="show_menu_type_prices_l"
+    			type="list"
+    			class="chzn-color"
+                label="COM_JSHOPMENU_SHOW_MENU_TYPES_PRICES_L_LABEL"
+                description="COM_JSHOPMENU_SHOW_MENU_TYPES_PRICES_L_DESC"
+                default=""
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+            <field
+                name="show_menu_type_one_prices"
+    			type="list"
+    			class="chzn-color"
+                label="COM_JSHOPMENU_SHOW_MENU_TYPES_ONE_PRICES_LABEL"
+                description="COM_JSHOPMENU_SHOW_MENU_TYPES_ONE_PRICES_DESC"
+                default=""
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+            <field
+                name="show_menu_type_all_price"
+    			type="list"
+    			class="chzn-color"
+                label="COM_JSHOPMENU_SHOW_MENU_TYPES_ALL_PRICES_LABEL"
+                description="COM_JSHOPMENU_SHOW_MENU_TYPES_ALL_PRICES_DESC"
+                default=""
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+        </fieldset>
+    </fields>
+ </form>

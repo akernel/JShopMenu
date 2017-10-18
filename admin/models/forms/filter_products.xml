@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter" >
+		<field
+			name="search"
+			type="text"
+			label="COM_CATEGORIES_ITEMS_SEARCH_FILTER"
+			hint="JSEARCH_FILTER"
+			class="js-stools-search-string"
+		/>
+		<field
+			name="published"
+			type="status"
+			label="COM_CATEGORIES_FILTER_PUBLISHED"
+			description="COM_CATEGORIES_FILTER_PUBLISHED_DESC"
+			onchange="this.form.submit();"
+			>
+			<option value="">JOPTION_SELECT_PUBLISHED</option>
+		</field>
+        
+        <field
+			name="category_id"
+			type="JSMCategory"
+			label="Меню"
+			description=""
+			onchange="this.form.submit();"
+			>
+			<option value="">- Выберите меню -</option>
+            
+		</field>
+        <field
+			name="menu_type_id"
+			type="JSMMenuTypes"
+			label="Тип меню"
+			description=""
+			onchange="this.form.submit();"
+			>
+			<option value="">- Выберите тип меню -</option>
+            
+		</field>
+        <field
+			name="product_type_id"
+			type="JSMProductTypes"
+			label="Тип продукта"
+			description=""
+			onchange="this.form.submit();"
+			>
+			<option value="">- Выберите тип продукта -</option>
+            
+		</field>
+        
+	</fields>
+	<fields name="list">
+		<field
+			name="fullordering"
+			type="list"
+			label="JGLOBAL_SORT_BY"
+			statuses="*,0,1,2,-2"
+			description="JGLOBAL_SORT_BY"
+			onchange="this.form.submit();"
+			default="a.id DESC"
+			>
+			<option value="">JGLOBAL_SORT_BY</option>
+			<option value="p.ordering ASC">JGRID_HEADING_ORDERING_ASC</option>
+			<option value="p.ordering DESC">JGRID_HEADING_ORDERING_DESC</option>
+			<option value="p.published ASC">JSTATUS_ASC</option>
+			<option value="p.published DESC">JSTATUS_DESC</option>
+			<option value="p.name ASC">JGLOBAL_TITLE_ASC</option>
+			<option value="p.name DESC">JGLOBAL_TITLE_DESC</option>
+			<option value="p.product_id ASC">JGRID_HEADING_ID_ASC</option>
+			<option value="p.product_id DESC">JGRID_HEADING_ID_DESC</option>
+			<option value="p.price ASC">Цена (по возрастанию)</option>
+			<option value="p.price DESC">Цена (по убыванию)</option>
+			<option value="p.ves ASC">Вес (по возрастанию)</option>
+			<option value="p.ves DESC">Вес (по убыванию)</option>
+			<option value="p.koll ASC">Кол-во (по возрастанию)</option>
+			<option value="p.koll DESC">Кол-во (по убыванию)</option>
+		</field>
+		<field
+			name="limit"
+			type="limitbox"
+			class="input-mini"
+			default="25"
+			label="COM_CATEGORIES_LIST_LIMIT"
+			description="COM_CATEGORIES_LIST_LIMIT_DESC"
+			onchange="this.form.submit();"
+		/>
+	</fields>
+</form>

@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fieldset
+        name="categories_view"
+        label="COM_JSHOPMENU_CONFIG_CATEGORIES_VIEW_SETTINGS_LABEL"
+        description="COM_JSHOPMENU_CONFIG_CATEGORIES_VIEW_SETTINGS_DESC"
+        addfieldpath="/administrator/components/com_jshopmenu/models/fields"
+    >
+        <field
+            name="show_category_short_description"
+			type="list"
+			class="chzn-color"
+            label="COM_JSHOPMENU_SHOW_CATEGORY_SHORT_DESCRIPTION_LABEL"
+            description="COM_JSHOPMENU_SHOW_CATEGORY_SHORT_DESCRIPTION_DESC"
+            default="0"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        <field
+            name="show_category_description"
+			type="list"
+			class="chzn-color"
+            label="COM_JSHOPMENU_SHOW_CATEGORY_DESCRIPTION_LABEL"
+            description="COM_JSHOPMENU_SHOW_CATEGORY_DESCRIPTION_DESC"
+            default="0"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        <field
+            name="show_category_image"
+			type="list"
+			class="chzn-color"
+            label="COM_JSHOPMENU_SHOW_CATEGORY_IMAGE_LABEL"
+            description="COM_JSHOPMENU_SHOW_CATEGORY_IMAGE_DESC"
+            default="0"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        
+        
+		<field
+			name="spacer1"
+			type="spacer"
+			hr="true"
+			/>
+        
+        <field
+            name="category_color_block"
+            type="metrocolors"
+            label="Цвет блока"
+            description=""
+			size="40"
+            default="white"
+        />
+        <field
+            name="category_color_text"
+            type="metrocolors"
+            label="Цвет текста"
+            description=""
+			size="40"
+            default="black"
+        />
+        <field
+            name="category_type_efeckt"
+            type="list"
+            label="Эфект картинки"
+            description="COM_JSHOPMENU_SHOW_CATEGORY_IMAGE_DESC"
+            default=""
+        >
+            <option value="">Default</option>
+            <option value="fade">Fade</option>
+            <option value="slide-down">Slide Top</option>
+            <option value="slide-up">Slide Bot</option>
+            <option value="slide-left">Slide Left</option>
+            <option value="slide-right">Slide Right</option>
+            <option value="zooming">Zooming In</option>
+            <option value="zooming-out">Zooming Out</option>
+        </field>
+        <field
+            name="category_color_sub_block"
+            type="metrocolors"
+            label="Цвет блока текста"
+            description=""
+			size="40"
+            default="gray"
+        />
+        
+        
+		<field
+			name="spacer21"
+			type="spacer"
+			hr="true"
+			/>
+        
+        <field
+            name="category_number_menu_type"
+			type="jsmmenutypes"
+            label="Открывать тип меню(ID)"
+            description=""
+            default="1"
+        />
+        
+        <field
+            name="category_load_menu_type"
+			type="list"
+            label="Загрузка типов меню"
+            description=""
+            default="0"
+        >
+            <option value="0">Обычный</option>
+            <option value="1">Ajax</option>
+        </field>
+        
+        
+        <field
+            name="category_koef_obslujivanie"
+			type="text"
+            label="Коефицент обслуживания"
+            description=""
+            default="0.10"
+        />
+        
+        <field
+            name="category_min_koll_person"
+			type="number"
+            label="Минемальное количество персон"
+            description=""
+            default="10"
+        />
+        <field
+            name="category_max_koll_person"
+			type="number"
+            label="Максимальное количество персон"
+            description=""
+            default="100"
+        />
+        
+        <field
+            name="category_on_session"
+			type="radio"
+			class="btn-group btn-group-yesno"
+            label="Запоминать в сессии"
+            description=""
+            default="0"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        
+    </fieldset>
+    <fieldset
+        name="menu_types_view"
+        label="COM_JSHOPMENU_CONFIG_MENU_TYPES_VIEW_SETTINGS_LABEL"
+        description="COM_JSHOPMENU_CONFIG_MENU_TYPES_VIEW_SETTINGS_DESC"
+    >
+        <field
+            name="show_category_short_name"
+			type="list"
+			class="chzn-color"
+            label="COM_JSHOPMENU_SHOW_CATEGORY_SHORT_NAME_LABEL"
+            description="COM_JSHOPMENU_SHOW_CATEGORY_SHORT_NAME_DESC"
+            default="0"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        
+		<field
+			name="spacer2"
+			type="spacer"
+			hr="true"
+			/>
+            
+        <field
+            name="show_category_koll_person"
+			type="list"
+			class="chzn-color"
+            label="COM_JSHOPMENU_SHOW_CATEGORY_KOLL_PERSON_LABEL"
+            description="COM_JSHOPMENU_SHOW_CATEGORY_KOLL_PERSON_DESC"
+            default="0"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        <field
+            name="category_koll_person_edit"
+			type="radio"
+			class="btn-group btn-group-yesno"
+            label="COM_JSHOPMENU_CATEGORY_KOLL_PERSON_EDIT_LABEL"
+            description="COM_JSHOPMENU_CATEGORY_KOLL_PERSON_EDIT_DESC"
+            default="0"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        
+		<field
+			name="spacer3"
+			type="spacer"
+			hr="true"
+			/>
+            
+        <field
+            name="show_category_product_type"
+			type="list"
+            label="COM_JSHOPMENU_SHOW_CATEGORY_PRODUCT_TYPE_LABEL"
+            description="COM_JSHOPMENU_SHOW_CATEGORY_PRODUCT_TYPE_DESC"
+            default="0"
+        >
+            <option value="0">COM_JSHOPMENU_PARAM_VER</option>
+            <option value="1">COM_JSHOPMENU_PARAM_GOR</option>
+        </field>
+        
+		<field
+			name="spacer4"
+			type="spacer"
+			hr="true"
+			/>
+            
+        <field
+            name="show_menu_type_image"
+			type="list"
+			class="chzn-color"
+            label="COM_JSHOPMENU_SHOW_MENU_TYPES_IMAGE_LABEL"
+            description="COM_JSHOPMENU_SHOW_MENU_TYPES_IMAGE_DESC"
+            default="0"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        <field
+            name="show_menu_type_name"
+			type="list"
+			class="chzn-color"
+            label="COM_JSHOPMENU_SHOW_MENU_TYPES_NAME_LABEL"
+            description="COM_JSHOPMENU_SHOW_MENU_TYPES_NAME_DESC"
+            default="0"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        <field
+            name="show_menu_type_short_description"
+			type="list"
+			class="chzn-color"
+            label="COM_JSHOPMENU_SHOW_MENU_TYPES_SHORT_DESCRIPTION_LABEL"
+            description="COM_JSHOPMENU_SHOW_MENU_TYPES_SHORT_DESCRIPTION_DESC"
+            default="0"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        <field
+            name="show_menu_type_ves"
+			type="list"
+			class="chzn-color"
+            label="COM_JSHOPMENU_SHOW_MENU_TYPES_VES_LABEL"
+            description="COM_JSHOPMENU_SHOW_MENU_TYPES_VES_DESC"
+            default="0"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        <field
+            name="show_menu_type_price"
+			type="list"
+			class="chzn-color"
+            label="COM_JSHOPMENU_SHOW_MENU_TYPES_PRICE_LABEL"
+            description="COM_JSHOPMENU_SHOW_MENU_TYPES_PRICE_DESC"
+            default="0"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        <field
+            name="show_menu_type_koll"
+			type="list"
+			class="chzn-color"
+            label="COM_JSHOPMENU_SHOW_MENU_TYPES_KOLL_LABEL"
+            description="COM_JSHOPMENU_SHOW_MENU_TYPES_KOLL_DESC"
+            default="0"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        <field
+            name="menu_type_koll_edit"
+			type="radio"
+			class="btn-group btn-group-yesno"
+            label="COM_JSHOPMENU_MENU_TYPES_KOLL_EDIT_LABEL"
+            description="COM_JSHOPMENU_MENU_TYPES_KOLL_EDIT_DESC"
+            default="0"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="show_menu_type_prices"
+			type="list"
+			class="chzn-color"
+            label="COM_JSHOPMENU_SHOW_MENU_TYPES_PRICES_LABEL"
+            description="COM_JSHOPMENU_SHOW_MENU_TYPES_PRICES_DESC"
+            default="0"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        <field
+            name="show_menu_type_one_ves"
+			type="list"
+			class="chzn-color"
+            label="COM_JSHOPMENU_SHOW_MENU_TYPES_ONE_VES_LABEL"
+            description="COM_JSHOPMENU_SHOW_MENU_TYPES_ONE_VES_DESC"
+            default="0"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        
+		<field
+			name="spacer5"
+			type="spacer"
+			hr="true"
+			/>
+        
+        <field
+            name="show_menu_type_image_min"
+			type="list"
+			class="chzn-color"
+            label="Компакт Изоброжение на мобиле"
+            description="Компакт Изоброжение на мобиле"
+            default="0"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        
+		<field
+			name="spacer6"
+			type="spacer"
+			hr="true"
+			/>
+            
+        
+        <field
+            name="show_menu_type_one_veses"
+			type="list"
+			class="chzn-color"
+            label="COM_JSHOPMENU_SHOW_MENU_TYPES_ONE_VESES_LABEL"
+            description="COM_JSHOPMENU_SHOW_MENU_TYPES_ONE_VESES_DESC"
+            default="0"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        <field
+            name="show_menu_type_one_veses_voda"
+			type="list"
+			class="chzn-color"
+            label="COM_JSHOPMENU_SHOW_MENU_TYPES_ONE_VESES_VODA_LABEL"
+            description="COM_JSHOPMENU_SHOW_MENU_TYPES_ONE_VESES_VODA_DESC"
+            default="0"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        <field
+            name="show_menu_type_one_price"
+			type="list"
+			class="chzn-color"
+            label="Показать стоимость на одну персону"
+            description=""
+            default="0"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        <field
+            name="show_menu_type_obslugivanie"
+			type="list"
+			class="chzn-color"
+            label="COM_JSHOPMENU_SHOW_MENU_TYPES_OBSLUGIVANIE_LABEL"
+            description="COM_JSHOPMENU_SHOW_MENU_TYPES_OBSLUGIVANIE_DESC"
+            default="0"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        <field
+            name="show_menu_type_prices_l"
+			type="list"
+			class="chzn-color"
+            label="COM_JSHOPMENU_SHOW_MENU_TYPES_PRICES_L_LABEL"
+            description="COM_JSHOPMENU_SHOW_MENU_TYPES_PRICES_L_DESC"
+            default="0"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        <field
+            name="show_menu_type_one_prices"
+			type="list"
+			class="chzn-color"
+            label="COM_JSHOPMENU_SHOW_MENU_TYPES_ONE_PRICES_LABEL"
+            description="COM_JSHOPMENU_SHOW_MENU_TYPES_ONE_PRICES_DESC"
+            default="0"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        <field
+            name="show_menu_type_all_price"
+			type="list"
+			class="chzn-color"
+            label="COM_JSHOPMENU_SHOW_MENU_TYPES_ALL_PRICES_LABEL"
+            description="COM_JSHOPMENU_SHOW_MENU_TYPES_ALL_PRICES_DESC"
+            default="0"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        
+        
+    </fieldset>
+    <fieldset
+        name="table_products_view"
+        label="Отображение таблицы"
+        description=""
+    >
+        
+        <field
+            name="table_type"
+			type="list"
+            label="Выберете таблицу"
+            description=""
+            default="0"
+        >
+            <option value="0">Обычная</option>
+            <option value="1">Умная</option>
+        </field>
+        
+		<field
+			name="spacer_table1"
+			type="spacer"
+            label="Общие настройки таблицы"
+			/>
+        
+        <field
+            name="table_striped"
+			type="radio"
+			class="btn-group btn-group-yesno"
+            label="Выделить нечетные строки"
+            default="0"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="table_border"
+			type="radio"
+			class="btn-group btn-group-yesno"
+            label="Внешняя граница"
+            default="0"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="table_bordered"
+			type="radio"
+			class="btn-group btn-group-yesno"
+            label="Внутрение границы"
+            default="0"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="table_hovered"
+			type="radio"
+			class="btn-group btn-group-yesno"
+            label="Выделять строку"
+            default="0"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="table_cell_hovered"
+			type="radio"
+			class="btn-group btn-group-yesno"
+            label="Выделять элемент"
+            default="0"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        
+        
+		<field
+			name="spacer_table2"
+			type="spacer"
+            label="Настройки умной таблицы"
+			/>
+            
+        <field
+            name="table_new_search"
+			type="radio"
+			class="btn-group btn-group-yesno"
+            label="Включить поиск"
+            default="0"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        
+        <field
+            name="table_new_paginator"
+			type="radio"
+			class="btn-group btn-group-yesno"
+            label="Включить разбиение на страницы"
+            default="1"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        
+        <field
+             name="table_new_length"
+             type="text"
+             label="Изначально кол-во на странице"
+             description=""
+             size="40"
+             default="5"
+        />
+        
+        <field
+             name="table_new_length_menu"
+             type="text"
+             label="Количество"
+             description="Пример: [5, 10, 25, -1]; где -1 это все"
+             size="40"
+             default="[5, 10, 25, -1]"
+        />
+        
+        
+        
+		<field
+			name="spacer7"
+			type="spacer"
+            label="Какие поля таблицы показывать в мобильной версии"
+			/>
+            
+        <field
+            name="products_image_mobile_hidden"
+			type="list"
+			class="chzn-color"
+            label="Изображение"
+            description=""
+            default="0"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        
+        <field
+            name="products_name_mobile_hidden"
+			type="list"
+			class="chzn-color"
+            label="Название"
+            description=""
+            default="1"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        <field
+            name="products_short_desc_mobile_hidden"
+			type="list"
+			class="chzn-color"
+            label="Краткое описание"
+            description=""
+            default="0"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        <field
+            name="products_ves_mobile_hidden"
+			type="list"
+			class="chzn-color"
+            label="Выход"
+            description=""
+            default="0"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        <field
+            name="products_price_mobile_hidden"
+			type="list"
+			class="chzn-color"
+            label="Цена"
+            description=""
+            default="0"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        <field
+            name="products_koll_mobile_hidden"
+			type="list"
+			class="chzn-color"
+            label="Количество"
+            description=""
+            default="0"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        <field
+            name="products_prices_mobile_hidden"
+			type="list"
+			class="chzn-color"
+            label="Сумма"
+            description=""
+            default="0"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        <field
+            name="products_one_ves_mobile_hidden"
+			type="list"
+			class="chzn-color"
+            label="Выход на 1 персону"
+            description=""
+            default="0"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        
+        
+		<field
+			name="spacer8"
+			type="spacer"
+			hr="true"
+			/>
+            
+        
+        <field
+            name="products_big_image"
+			type="list"
+			class="chzn-color"
+            label="Показывать увеличеное изображения"
+            description=""
+            default="0"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+    </fieldset>
+    <fieldset
+        name="products_view"
+        label="COM_JSHOPMENU_CONFIG_PRODUCTS_VIEW_SETTINGS_LABEL"
+        description=""
+    >
+    </fieldset>
+    <fieldset
+        name="product_types_view"
+        label="COM_JSHOPMENU_CONFIG_PRODUCT_TYPES_VIEW_SETTINGS_LABEL"
+        description="COM_JSHOPMENU_CONFIG_PRODUCT_TYPES_VIEW_SETTINGS_DESC">
+    
+		<field 
+            name="product_types_active" 
+            type="radio"
+			class="btn-group btn-group-yesno"
+			label="Первый элемент открыт"
+			description="Открыть или нет первый элемент"
+			default="0"
+		>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+        
+    </fieldset>
+    <fieldset
+        name="email_setting"
+        label="COM_JSHOPMENU_CONFIG_EMAIL_SETTINGS_LABEL"
+        description="COM_JSHOPMENU_CONFIG_EMAIL_SETTINGS_DESC">
+        
+        <field
+             name="email_type"
+             type="radio"
+			class="btn-group"
+             label="Отправка"
+             description=""
+             default="1"
+        >
+            <option value="1">E-mail сайта</option>
+            <option value="2">E-mail пользовательский</option>
+        </field>
+        <field
+             name="email_to"
+             type="text"
+             label="E-mail пользовательский"
+             description="COM_JSHOPMENU_EMAIL_TO_DESC"
+             size="40"
+             default=""
+        />
+        <field
+             name="email_subject_admin"
+             type="text"
+             label="COM_JSHOPMENU_EMAIL_SUBJECT_ADMIN_LABEL"
+             description="COM_JSHOPMENU_EMAIL_SUBJECT_ADMIN_DESC"
+             size="40"
+             default=""
+        />
+        <field
+             name="email_desc_admin"
+             type="textarea"
+             label="COM_JSHOPMENU_EMAIL_DESC_ADMIN_LABEL"
+             description="COM_JSHOPMENU_EMAIL_DESC_ADMIN_DESC"
+             size="40"
+             default=""
+        />
+        
+		<field
+			name="spacer9"
+			type="spacer"
+			hr="true"
+			/>
+            
+        <field
+             name="email_subject_user"
+             type="text"
+             label="COM_JSHOPMENU_EMAIL_SUBJECT_USER_LABEL"
+             description="COM_JSHOPMENU_EMAIL_SUBJECT_USER_DESC"
+             size="40"
+             default=""
+        />
+        <field
+             name="email_desc_user"
+             type="textarea"
+             label="COM_JSHOPMENU_EMAIL_DESC_USER_LABEL"
+             description="COM_JSHOPMENU_EMAIL_DESC_USER_DESC"
+             size="40"
+             default=""
+        />
+        <field
+			name="email_success_text"
+			type="textarea"
+            default="Сообщенее отправлено, спапибо!"
+			label="Сооющение успешной отправки"
+			description="" />
+            
+        <field
+			name="show_captcha"
+			type="radio"
+            class="btn-group btn-group-yesno radio"
+			label="Капча(форма)"
+			description=""
+            default="0">
+            <option value="0">Нет</option>
+            <option value="1">Да</option>
+        </field>   
+    </fieldset>
+    <fieldset name="fields"
+    label="Настройки полей"
+     description="настройки полей"
+        addfieldpath="/modules/mod_form/fields">
+        <field
+			name="fields"
+			type="modformfield"
+			label="Настройки полей формы"
+			description="Добавьте поля для формы и настройте его" />
+	</fieldset>
+    <fieldset
+        name="fancybox_setting"
+        label="Настройки fancybox"
+        description="">
+        
+        <field
+			name="fancybox_padding"
+			type="text"
+            default="10"
+			label="Отступ внутрений(форма)"
+			description="Примеры: 5;10;20" />
+        <field
+			name="fancybox_margin"
+			type="text"
+            default="10"
+			label="Отступ внешний(форма)"
+			description="Примеры: 5;10;20" />
+        <field
+			name="fancybox_width_max"
+			type="text"
+            default="60%"
+			label="Максимальная ширена(форма)"
+			description="Примеры: 50%;200px;auto" />
+        <field
+			name="fancybox_height_max"
+			type="text"
+            default="auto"
+			label="Максимальная высота(форма)"
+			description="Примеры: 50%;200px;auto" />
+    </fieldset>
+</config>
