@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_JSHOPMENU_CATEGORY_VIEW_CATEGORY_TITLE">
+        <message>COM_JSHOPMENU_CATEGORY_VIEW_CATEGORY_DESC</message>
+    </layout>
+    <fields
+        name="request"
+        addfieldpath="/administrator/components/com_jshopmenu/models/fields"
+    />
+    <fields name="request">
+        <fieldset name="request">
+            <field
+                name="category_id"
+                type="jsmcategory"
+                label="COM_JSHOPMENU_CATEGORY_FIELD_CATEGORY_ID_LABEL"
+                description="COM_JSHOPMENU_CATEGORY_FIELD_CATEGORY_ID_DESC"
+            />
+        </fieldset>
+    </fields>
+</metadata>

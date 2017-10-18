@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="default" label="COM_USERS_REGISTRATION_DEFAULT_LABEL">
+		<field
+			name="captcha"
+			type="captcha"
+			label="COM_USERS_CAPTCHA_LABEL"
+			description="COM_USERS_CAPTCHA_DESC"
+			validate="captcha"
+		/>
+	</fieldset>
+</form>
