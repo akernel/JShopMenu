@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+    <update>
+        <name>MOD_REMONLINE</name>
+	<description><![CDATA[
+			<div style="font-weight:normal;">
+			<p><strong>Remonline</strong> module. Only for remonline.ru. Please input API key from reonline.ru.</p>
+			<p>
+				For support please turn to <a href="https://www.akernel.ru/kontakty/" target="_blank">Akernel contact Page</a>
+			</p>
+			<small style="float:right">ver. 1.0.1</small>
+			</div>
+     ]]>
+	 </description>
+        <element>mod_remonline</element>
+        <type>module</type>
+        <version>1.0.1</version>
+ 
+        <infourl title="REMONLINE for Joomla! 1.0.1">https://www.akernel.ru/razrabotki/remonline</infourl>
+        <downloads>
+            <downloadurl type="full" format="zip">https://www.akernel.ru/extensions/update/mod_remonline-1.0.1-stable.zip</downloadurl>
+        </downloads>
+        <tags>
+        <tag>stable</tag>
+        </tags>
+ 
+        <maintainer>Artem Kernel</maintainer>
+        <maintainerurl>https://www.akernel.ru</maintainerurl>
+        <section>Updates</section>
+        <targetplatform name="joomla" version="3.[0123456789]" />
+    </update>
+    <update>
+        <name>MOD_REMONLINE</name>
+	<description><![CDATA[
+			<div style="font-weight:normal;">
+			<p><strong>Remonline</strong> module. Only for remonline.ru. Please input API key from reonline.ru.</p>
+			<p>
+				For support please turn to <a href="https://www.akernel.ru/kontakty/" target="_blank">Akernel contact Page</a>
+			</p>
+			<small style="float:right">ver. 1.0.0</small>
+			</div>
+     ]]>
+	 </description>
+        <element>mod_remonline</element>
+        <type>module</type>
+        <version>1.0.0</version>
+ 
+        <infourl title="REMONLINE for Joomla! 1.0.0">https://www.akernel.ru/razrabotki/remonline</infourl>
+        <downloads>
+            <downloadurl type="full" format="zip">https://www.akernel.ru/extensions/update/mod_remonline-1.0.0-stable.zip</downloadurl>
+        </downloads>
+        <tags>
+        <tag>stable</tag>
+        </tags>
+ 
+        <maintainer>Artem Kernel</maintainer>
+        <maintainerurl>https://www.akernel.ru</maintainerurl>
+        <section>Updates</section>
+        <targetplatform name="joomla" version="3.[0123456789]" />
+    </update>
+</updates>
